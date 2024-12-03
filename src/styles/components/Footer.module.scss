@@ -1,0 +1,159 @@
+.navbar {
+  background: linear-gradient(to right, #2a89b2, #2a89b2);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.footer {
+  background: linear-gradient(to right, #000000, #2a89b2);
+  color: #fff;
+  padding: 4rem 1rem 2rem;
+  position: relative;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__brand {
+    flex: 1;
+    max-width: 400px;
+
+    .logo {
+      height: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: #a0a0a0;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .contactBtn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: translateY(-2px);
+      }
+
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+  }
+
+  &__content {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  &__section {
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      a {
+        color: #a0a0a0;
+        transition: all 0.3s ease;
+        display: inline-block;
+
+        &:hover {
+          color: #fff;
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: #a0a0a0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #fff;
+        transform: translateY(-3px);
+      }
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &__legal {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      color: #a0a0a0;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
