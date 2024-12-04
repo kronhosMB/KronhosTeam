@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kronhos ERP",
-  description: "ytr",
+  title: "Kronhos ERP Team ",
+  description: "KRONHOS ERP",
   keywords: "empresa, marketing",
   icons: {
     icon: "/Images/IconoSinFondo.png",

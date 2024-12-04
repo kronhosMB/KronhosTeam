@@ -39,33 +39,29 @@ const Navigation = () => {
           
           <div className={`${styles.navbar__menu} ${isMenuOpen ? styles.menu_open : ''}`}>
             <Link 
-              href="/products" 
-              className={`${styles.navbar__link} ${pathname === '/products' ? styles.active : ''}`}
+              href="/" 
+              className={`${styles.navbar__link} ${pathname === '/' ? styles.active : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Productos
+              Sobre Nosotros
             </Link>
-            <Link 
-              href="/training" 
+            
+            <Link
+              href="/nosotros"
+              className={`${styles.navbar__link} ${pathname === '/nosotros' ? styles.active : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Nuestro Equipo
+            </Link>
+            <Link
+              href="/training"
               className={`${styles.navbar__link} ${pathname === '/training' ? styles.active : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Capacitación
+              Nuestras Oficinas
             </Link>
-            <Link 
-              href="/partners" 
-              className={`${styles.navbar__link} ${pathname === '/partners' ? styles.active : ''}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Partners
-            </Link>
-            <Link 
-              href="/about" 
-              className={`${styles.navbar__link} ${pathname === '/about' ? styles.active : ''}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Acerca de
-            </Link>
+
+
           </div>
         </div>
       </div>

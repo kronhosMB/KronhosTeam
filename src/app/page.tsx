@@ -1,8 +1,7 @@
 'use client';
 
-import Carrousel from '@/Sections/Carrousel';
-import Cards from '@/Sections/ImageCards';
-import Card from '@/components/Cards/ImageCard'
+import Carrousel from '@/components/Sections/Carrousel';
+import Cards from '@/components/Sections/ImageCards';
 
 export default function Home() {
   return (
