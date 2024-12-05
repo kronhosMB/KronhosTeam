@@ -54,14 +54,12 @@ const Navigation = () => {
               Nuestro Equipo
             </Link>
             <Link
-              href="/training"
-              className={`${styles.navbar__link} ${pathname === '/training' ? styles.active : ''}`}
+              href="/oficinas"
+              className={`${styles.navbar__link} ${pathname === '/oficinas' ? styles.active : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Nuestras Oficinas
             </Link>
-
-
           </div>
         </div>
       </div>
