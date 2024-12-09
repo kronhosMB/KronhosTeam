@@ -71,9 +71,14 @@ const departments = [
     members: [
       {
         name: "Kranklin ",
-        position: "Junior Programmer",
+        position: "Senior Programmer",
         desc: "Experto en desarrollo de Backend - Fronted",
         image: "/Work/Desarrolladores/image.png"
+      },{
+        name: "Santiago ",
+        position: "Senior Programmer",
+        desc: "Experto en desarrollo de Backend - Fronted",
+        image: "https://avatars.githubusercontent.com/u/135351568?v=4"
       },
       {
         name: "Hamilton Jumbo",
@@ -86,11 +91,6 @@ const departments = [
         position: "Junior Programmer",
         desc: "Experto en desarrollo de Backend - Fronted",
         image: "/Work/Desarrolladores/henry.webp"
-      }, {
-        name: "Santiago ",
-        position: "Junior Programmer",
-        desc: "Experto en desarrollo de Backend - Fronted",
-        image: "/Work/Desarrolladores/santi.webp"
       },
     ]
   },
