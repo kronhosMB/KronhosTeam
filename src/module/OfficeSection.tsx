@@ -7,10 +7,10 @@ const offices = [
   {
     city: "Ambato",
     image: "/Office/empresa2.jpg",
-    address: "Av. Cevallos y Mariano Egüez, Edificio Central, Piso 3",
-    phone: "+593 3 123 4567",
-    email: "ambato@empresa.com",
-    schedule: "Lun - Vie: 8:30 - 17:30",
+    address: "Av. Cevallos y Mariano Egüez, Edificio Central",
+    phone: "+593 98 350 2996",
+    email: "info@kronhos.com ",
+    schedule: "Lun - Vie: 8:30 - 18:00",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7985032891297!2d-78.6327131!3d-1.2752072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38392e2d63a9b%3A0xd29cee5e157a4cbd!2sKronhos%20Business%20Solutions%20-%20Software%20ERP!5e0!3m2!1ses!2sec!4v1680000000000!5m2!1ses!2sec",
     features: [
       "Espacios colaborativos",
@@ -21,12 +21,12 @@ const offices = [
   },
   {
     city: "Guayaquil",
-    image: "/Office/empresa3.jpg",
-    address: "Av. Francisco de Orellana, World Trade Center, Torre A, Piso 12",
-    phone: "+593 4 123 4567",
-    email: "guayaquil@empresa.com",
+    image: "/Office/empresa2.jpg",
+    address: "Oficina 702, piso 7,edificio The Point, Calle Paseo de España,Sector Puerto Santa Ana, Guayaquil, Guayas",
+    phone: "+593 99 768 8556",
+    email: "info@emprkronhos.com",
     schedule: "Lun - Vie: 9:00 - 18:00",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7985032891297!2d-78.6327131!3d-1.2752072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38392e2d63a9b%3A0xd29cee5e157a4cbd!2sKronhos%20Business%20Solutions%20-%20Software%20ERP!5e0!3m2!1ses!2sec!4v1680000000000!5m2!1ses!2sec",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.8832927582547!2d-79.87673662326974!3d-2.179416199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dd2827d5f6b%3A0x11b7939a794aff1e!2sThe%20Point!5e0!3m2!1ses!2sec!4v1702855843655!5m2!1ses!2sec",
     features: [
       "Vista panorámica al río",
       "Salas de conferencia equipadas",
@@ -40,8 +40,8 @@ const offices = [
     address: "Av. 6 de Diciembre y Whymper, Edificio Cosmos, Piso 8",
     status: "coming-soon",
     inauguracionDate: "Enero 2025",
-    phone: "+593 2 123 4567",
-    email: "quito@empresa.com",
+    phone: "+593 98 350 2996",
+    email: "info@kronhos.com ",
     schedule: "Próximamente",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7985032891297!2d-78.6327131!3d-1.2752072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38392e2d63a9b%3A0xd29cee5e157a4cbd!2sKronhos%20Business%20Solutions%20-%20Software%20ERP!5e0!3m2!1ses!2sec!4v1680000000000!5m2!1ses!2sec",
     features: [
@@ -54,7 +54,7 @@ const offices = [
 ];
 
 export default function OfficeLocations() {
-  const [activeOffice, setActiveOffice] = useState("Quito");
+  const [activeOffice, setActiveOffice] = useState("Ambato");
   const currentOffice = offices.find(office => office.city === activeOffice);
 
   return (
@@ -168,6 +168,7 @@ export default function OfficeLocations() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  title={`Mapa de la oficina de ${currentOffice.city}`}
                 ></iframe>
               </div>
             </div>
